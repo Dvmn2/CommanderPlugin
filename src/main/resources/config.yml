@@ -1,0 +1,15 @@
+# Rules (events, commands, conditions) are NOT stored here.
+# They live in plugins/CommanderPlugin/rules.json and are managed with /commander.
+
+settings:
+  # Plugin message language: "ru", "en" or "auto".
+  # "auto" uses the player's client locale; the console always gets English.
+  language: auto
+
+  # Maximum number of rules that can be created with /commander create (1..1000).
+  # Default: 100.
+  max-rules: 100
+
+  # Maximum number of commands in one rule when adding with /commander command add (1..100).
+  # Default: 20.
+  max-commands-per-rule: 20

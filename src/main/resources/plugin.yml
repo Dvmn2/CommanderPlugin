@@ -1,0 +1,27 @@
+name: CommanderPlugin
+description: Runs console commands in response to server events.
+version: '${version}'
+
+main: net.dvmn2.commanderplugin.CommanderPlugin
+api-version: '1.21'
+load: POSTWORLD
+
+authors: [ DVMN2 ]
+
+permissions:
+  commander.use:
+    description: Use /commander and view rules
+    default: op
+  commander.edit:
+    description: Create and change rules
+    default: op
+  commander.reload:
+    description: Use /commander reload
+    default: op
+  commander.admin:
+    description: All administrative Commander permissions
+    default: op
+    children:
+      commander.use: true
+      commander.edit: true
+      commander.reload: true
